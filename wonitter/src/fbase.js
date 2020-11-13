@@ -1,5 +1,5 @@
-import * as firebase from "firebase/app";
-
+import firebase from "firebase/app";
+import "firebase/auth";
 
 const firebaseConfig = {
     apiKey: "AIzaSyA1hse1CJDokXafZGsKQu7mYJIcDoDznaM",
@@ -11,7 +11,6 @@ const firebaseConfig = {
     appId: "1:297067902688:web:d321c940adb41cfe1c0285"
 };
 
-// .env 파일을 만들어서 gitignore에 추가하므로써 깃헙에 뜨지 않음
+firebase.initializeApp(firebaseConfig);
 
-// Initialize Firebase
-export default firebase.initializeApp(firebaseConfig);
+export const authService = firebase.auth();
