@@ -2,12 +2,16 @@ import React, { useState } from "react";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import Auth from "../routes/Auth";
 import Home from "../routes/Home";
+import Profile from "routes/Profile";
+import Navigation from "components/Navigation";
 
 
-const AppRouter = () => {
-    const [isLoggedIn, setIsLoggedIn] = useState(false);
+const AppRouter = ({isLoggedIn}) => {
+   
     return (
         <Router>
+            {isLoggedIn && <Navigation/>}
+            {/* navigation이 존재하려면 isloggedin은 true여야함. */}
             <Switch>
                 {isLoggedIn ? (
                     <>
@@ -15,6 +19,11 @@ const AppRouter = () => {
                             <Home />
                             {/* 로그인하면 홈화면 */}
                         </Route>
+<Route exact path="/profile">
+ <Profile />   
+</Route>
+ 
+
 
                     </>) : (<Route exact path="/"><Auth /></Route>)}
                 {/* 로그인 안했을때는 Auth */}
