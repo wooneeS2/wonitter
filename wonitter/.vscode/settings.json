@@ -1,0 +1,10 @@
+{
+    "prettier.useEditorConfig": false,
+    "editor.formatOnSave": true,
+    "launch": {
+        
+
+        "configurations": [],
+        "compounds": []
+    }
+}
