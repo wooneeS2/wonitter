@@ -1,4 +1,4 @@
-import { dbService } from "fbase";
+import { dbService, storageService } from "fbase";
 import React, { useState } from "react";
 
 const Weeet = ({ weeetObj, isOwner }) => {
@@ -8,6 +8,7 @@ const Weeet = ({ weeetObj, isOwner }) => {
     const ok = window.confirm("정말 지울거야?");
     if (ok) {
       await dbService.doc(`weeets/${weeetObj.id}`).delete();
+      await storageService.refFromURL(weeetObj.attachmentUrl).delete();
     }
   };
   //삭제
@@ -49,6 +50,9 @@ const Weeet = ({ weeetObj, isOwner }) => {
       ) : (
         <>
           <h4>{weeetObj.text}</h4>
+          {weeetObj.attachmentUrl && (
+            <img src={weeetObj.attachmentUrl} width="50px" height="50px" />
+          )}
           {isOwner && (
             <>
               <button onClick={onDeleteClick}>삭제</button>
