@@ -5,9 +5,10 @@ import { v4 as uuidv4 } from "uuid";
 
 const Home = userObj => {
   const [weeet, setNweet] = useState("");
+
   //form을 위한 State
   const [weeets, setNweets] = useState([]);
-  const [attachment, setAttachment] = useState();
+  const [attachment, setAttachment] = useState("");
 
   useEffect(() => {
     dbService.collection("weeets").onSnapshot(snapShot => {
@@ -19,7 +20,6 @@ const Home = userObj => {
       setNweets(weeetArray);
     });
   }, []);
-  console.log(userObj.userObj.uid);
 
   const onSubmit = async event => {
     event.preventDefault();
