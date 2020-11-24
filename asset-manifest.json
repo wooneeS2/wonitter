@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/wonitter.git/static/css/main.24f9105b.chunk.css",
-    "main.js": "/wonitter.git/static/js/main.5fa432d9.chunk.js",
-    "main.js.map": "/wonitter.git/static/js/main.5fa432d9.chunk.js.map",
-    "runtime-main.js": "/wonitter.git/static/js/runtime-main.9fbf758e.js",
-    "runtime-main.js.map": "/wonitter.git/static/js/runtime-main.9fbf758e.js.map",
-    "static/js/2.6249f903.chunk.js": "/wonitter.git/static/js/2.6249f903.chunk.js",
-    "static/js/2.6249f903.chunk.js.map": "/wonitter.git/static/js/2.6249f903.chunk.js.map",
-    "index.html": "/wonitter.git/index.html",
-    "static/css/main.24f9105b.chunk.css.map": "/wonitter.git/static/css/main.24f9105b.chunk.css.map",
-    "static/js/2.6249f903.chunk.js.LICENSE.txt": "/wonitter.git/static/js/2.6249f903.chunk.js.LICENSE.txt"
+    "main.css": "/wonitter/static/css/main.24f9105b.chunk.css",
+    "main.js": "/wonitter/static/js/main.5fa432d9.chunk.js",
+    "main.js.map": "/wonitter/static/js/main.5fa432d9.chunk.js.map",
+    "runtime-main.js": "/wonitter/static/js/runtime-main.93e28ada.js",
+    "runtime-main.js.map": "/wonitter/static/js/runtime-main.93e28ada.js.map",
+    "static/js/2.1ecb28c5.chunk.js": "/wonitter/static/js/2.1ecb28c5.chunk.js",
+    "static/js/2.1ecb28c5.chunk.js.map": "/wonitter/static/js/2.1ecb28c5.chunk.js.map",
+    "index.html": "/wonitter/index.html",
+    "static/css/main.24f9105b.chunk.css.map": "/wonitter/static/css/main.24f9105b.chunk.css.map",
+    "static/js/2.1ecb28c5.chunk.js.LICENSE.txt": "/wonitter/static/js/2.1ecb28c5.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.9fbf758e.js",
-    "static/js/2.6249f903.chunk.js",
+    "static/js/runtime-main.93e28ada.js",
+    "static/js/2.1ecb28c5.chunk.js",
     "static/css/main.24f9105b.chunk.css",
     "static/js/main.5fa432d9.chunk.js"
   ]
