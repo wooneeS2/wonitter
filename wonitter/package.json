@@ -23,7 +23,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy":"npm run build",
+    "deploy" : "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -48,5 +50,7 @@
     "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-react-native": "^3.10.0",
     "prettier": "2.1.2"
-  }
+  },
+"homepage":"https://wooneeS2.github.io/wonitter"
+
 }

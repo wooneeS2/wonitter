@@ -6,6 +6,7 @@ import {
   faGoogle,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
+import AuthForm from "components/AuthForm";
 
 const Auth = () => {
   //sign in
